@@ -16,5 +16,11 @@ class MachineController < Sinatra::Base
         erb :show
     end
 
+    delete "/machines/:id" do
+        mach_id = params[:id]
+        Machine.destroy(mach_id)
+        redirect "/machines"
+    end
+
 
 end

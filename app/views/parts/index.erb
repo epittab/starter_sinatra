@@ -1,0 +1,18 @@
+
+<h1> Hello Parts! </h1>
+
+<ul>
+
+
+<% @parts.each do |part| %>
+
+    <li>
+        <a href="/parts/<%= part.id %>"> <%= part.brand  + " - " + part.name + " - Part no. " + part.reference_number.to_s %>  </a>
+    </li>
+
+
+<% end %>
+
+</ul>
+
+<a href="/"> Go Back to Home </a>
