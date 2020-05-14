@@ -1,0 +1,18 @@
+
+<h1> This is the page for <%=  @mach.brand + " " +  @mach.name %>
+
+<ul>
+
+<% @mach.parts.each do |part| %>
+
+    <li>
+        <a href="/parts/<%= part.id %>"> <%= part.brand  + " - " + part.name + " - Part no. " + part.reference_number.to_s %>  </a>
+    </li>
+
+<% end%>
+
+</ul>
+
+
+
+<a href="/machines"> Go Back </a>

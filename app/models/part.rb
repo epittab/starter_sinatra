@@ -1,6 +1,6 @@
 class Part < ActiveRecord::Base
 
-    has_many :machineparts
-    has_many :machines, through: :machineparts
+    has_many :machine_parts
+    has_many :machines, through: :machine_parts
 
 end

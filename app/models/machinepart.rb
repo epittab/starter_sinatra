@@ -1,6 +1,6 @@
 class MachinePart < ActiveRecord::Base
 
-    belongs_to :machines
-    belongs_to :parts
+    belongs_to :machine
+    belongs_to :part
 
 end

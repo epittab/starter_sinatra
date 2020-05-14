@@ -1,0 +1,16 @@
+
+<h1> Hello Machines! </h1>
+
+<ul>
+
+
+<% @machines.each do |mach| %>
+
+    <li>
+        <a href="/machines/<%= mach.id %>"> <%= mach.brand + " " + mach.name %>  </a>
+    </li>
+
+
+<% end %>
+
+</ul>
